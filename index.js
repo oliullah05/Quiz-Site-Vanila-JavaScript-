@@ -73,8 +73,13 @@ const displayQuiz = (data) => {
   });
 };
 
+// document.getElementById("oli").addEventListener('click',function(){
+
+// })
+
+
 // EventListener for quiz submit button
-document.querySelector("#submit").addEventlistener("click", () => {
+document.querySelector("#submit").addEventListener('click', () => {
   if (answers.length < 6) {
     return;
   }
@@ -105,7 +110,7 @@ document.querySelector("#submit").addEventlistener("click", () => {
   } else {
     grade.status = "Poor";
     grade.color = "text-red-600";
-  }
+  }})
 
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("result"));
@@ -182,4 +187,3 @@ document.querySelector("#submit").addEventlistener("click", () => {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
-});
