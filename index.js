@@ -15,6 +15,7 @@ let displayResult = document.querySelector("#displayResult");
 
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
+  // let countDown =document.querySelector()
   let countDown = document.querySelector("#countDownContainer");
   let counter = document.querySelector("#counter");
   let counterNum = 2;
@@ -22,9 +23,11 @@ startQuiz.addEventListener("click", () => {
   countDown.classList.add("flex");
 
   let x = setInterval(() => {
+    
+    // console.log(countDown)
     if (counterNum < 0) {
-      coutDown.classList.remove("flex");
-      coutDown.classList.add("hidden");
+      countDown.classList.remove("flex");
+      countDown.classList.add("hidden");
       counterNum = 3;
       count = 0;
       timer = null;
@@ -110,7 +113,7 @@ document.querySelector("#submit").addEventListener('click', () => {
   } else {
     grade.status = "Poor";
     grade.color = "text-red-600";
-  }})
+  }
 
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("result"));
@@ -127,10 +130,12 @@ document.querySelector("#submit").addEventListener('click', () => {
       ])
     );
   } else {
+    
     localStorage.setItem(
       "results",
       JSON.stringify([
         {
+        
           marks: totalMark,
           examTime: timeTaken.innerText,
           status: grade.status,
@@ -187,3 +192,4 @@ document.querySelector("#submit").addEventListener('click', () => {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+})
