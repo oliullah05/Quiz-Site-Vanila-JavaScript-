@@ -11,16 +11,37 @@
 <body class="container">
     <h1 class="text-center p-4"><b>Welcome to PH-HEro Blog</b></h1>
     <ol class="">
-        <li>what is the between Map and FoEach function?
+        <li>what is the deference between Map and FoEach function?
             <p> <span class="text-danger">Answer:-</span> <span class="fw-bold">Map and ForEach:-</span>Map is a function which apply only on array .. That's why its called an array method . map task is so simple. It takes an array and create a new arrey by manipulating each element of an existing array. It can't change original array . And <b>ForEach</b> function exactly do the same work. Both do loop through an arrey . But map function returns the array and ForEach dosen't reuturn anything.. Thats the basic deference of Map and ForEach function.</p>
         </li>
        
        
-        <li>what is the between Filter and Find function?
+        <li>what is the deference between Filter and Find function?
             <p> <span class="text-danger">Answer:-</span> <span class="fw-bold">Filter and Find:-</span> This two also is an array method . Filter and Find usally use for to loop through an arrey but based on a condition . If requred condition match for the target array than Filter and Find function show this results. However, they have different use cases and return different results. <b>Filter </b> method returns a new array but didn't change original array . it's made a array by itself and retun this array also . On the other hand, <b>Find</b> method returns only the first element in an array which is matched the given condition. Thats the basic deference of Filter and Find function.</p>
         </li>
+
+
+
+        <li>what is  deference of Local storage , session storage and the cookie?
+            <p> <span class="text-danger">Answer:-</span>Local storage ,session storage and the cookie three are web api. They are only available on browser like as Chrome , Brave.<br>
+            <b>Local storage:-</b>Local storage is Web Storage API where we can store some data on the client's computer in the form of key/value pairs in a web browser. This data has lifetime access on the browser unless we delete or remove it. This data doesn't delete even the user close his browser. It help a devoloper to improve a website performance.<br>
+            <b>Session storage:-</b> Session storage as same as local storage. The deference is local storage data is deleted when user close his browser or tab . Although local storage save his data forever. Thats the basic deference of this storages. <br>
+            <b>Cookie:-</b> cookies are small text file which is store in clint computer browser .It's maximum size can be 4kb. They are commonly used for user authentication, tracking user activity, and personalizing content. See the cookies a website can recognise and understand user's behavior and use it for improving user experience. In cookies , a devolaper can be given an expiration date or set to expire. otherwise it will consider as session cookie ans it will delete when the user close his tab or browser.
+        </li>
        
-       
+        <li>What is Event Loop and how it works?
+            <p> <span class="text-danger">Answer:-</span>
+                The event loop is an architectural design pattern that allows code to run asynchronously on the javascript engines and makes it possible for code to execute blocking instructions first and when available execute asynchronous functions. <br>
+                The event loop has three major components, Call Stack, Event Queue, and WebAPIs/C++ APIs. Call stack will execute code in a last in first out approach(FIFO).
+                And then the The Event Loop comes in . Event Loop's job is to watch Callback Queue and Call Stack, whenever Call Stack is empty and we have called in Callback Queue. The event loop will move calls to Call Stack and execute them in succession. <br>
+                
+                
+                It manage function calls in a way that asynchronous events would go into the event queue and will be called only after the call stack is empty. Thats the way of Event Loop works.
+
+            </p>
+        </li>
+
+
     </ol>
 </body>
 </html>
