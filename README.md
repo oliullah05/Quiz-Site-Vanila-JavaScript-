@@ -1,8 +1,16 @@
-# quiz-hero
+# QUIZ HERO
 
-Vanilla JavaScript Simple Quiz App With Local Storage (Only Frontend)
+
+## Key Features of Our Platform:
+
+-  Quiz 
+
+## Technology Stack
+Vanila JavaScript
+Tailwind css
+LocalStorage
 
 ## Live Link
 
-Hosted in Netlify -> [QUIZ HERO](https://musical-lollipop-5763ed.netlify.app/)
+Hosted in Netlify -> [QUIZ HERO](https://subtle-gumption-a31c7f.netlify.app)
 
