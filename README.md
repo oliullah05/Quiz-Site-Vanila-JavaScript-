@@ -1,6 +1,6 @@
+# QUIZ-HERO
 
-# QUIZ HERO
-
+Vanilla JavaScript Simple Quiz App With Local Storage (Only Frontend) 
 
 ## Key Features of Our Platform:
 
